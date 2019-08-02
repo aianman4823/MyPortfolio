@@ -1,0 +1,25 @@
+.spantext{
+    position:absolute;
+    top:20%;
+    color:white;
+    font-size:70px;
+    font-weight:700;
+    width:100%;
+    text-align: center
+}
+
+
+@media screen and (max-width: 590px) {
+    .spantext{
+        position:absolute;
+        top:30%;
+        color:white;
+        font-size:60px;
+        font-weight:700;
+        width:100%;
+        text-align: center
+    }
+}
+
+
+
