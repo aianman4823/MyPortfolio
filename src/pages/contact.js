@@ -17,7 +17,7 @@ export default class Portfolio extends React.Component {
         this.getWindowSize = this.getWindowSize.bind(this);
     }
 
-   
+
 
     componentWillMount() {
         window.addEventListener('resize', () => {
@@ -37,7 +37,7 @@ export default class Portfolio extends React.Component {
     }
 
     render() {
-        
+
 
         const styles = {
             backcolor: {
@@ -63,6 +63,11 @@ export default class Portfolio extends React.Component {
                 fontSize: '20px',
                 fontWeight: 700,
             },
+            footer:{
+                width: "100%",
+                textAlign: "center",
+                
+            },
         }
         return (
             <div>
@@ -74,12 +79,14 @@ export default class Portfolio extends React.Component {
                         <span style={styles.spantext}>Contact</span>
                         <span style={styles.spansmalltext}>How to contact me ?</span>
                     </div >
-                    
+
                 </div >
                 <div>
-                    <ContactForm/>
+                    <ContactForm />
+                    <footer style={styles.footer}>
+                        <p>COPYRIGHT &#169; Akito's Portfolio ALL RIGHTS RESERVED.	</p>
+                    </footer>
                 </div>
-
             </div>
 
         );

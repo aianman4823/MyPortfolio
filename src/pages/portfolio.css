@@ -1,6 +1,6 @@
 .spantext{
     position:absolute;
-    top:20%;
+    top:100px;
     color:white;
     font-size:70px;
     font-weight:700;
@@ -8,17 +8,66 @@
     text-align: center
 }
 
+.spantext2{
+    position:absolute;
+    top:380px;
+    color:white;
+    font-size:70px;
+    font-weight:700;
+    width:100%;
+    text-align: center
+}
+
+.spantext2:hover{
+    opacity: 0.5;
+}
+
+.spantext3{
+    position:absolute;
+    top:690px;
+    color:white;
+    font-size:70px;
+    font-weight:700;
+    width:100%;
+    text-align: center
+}
+.spantext3:hover{
+    opacity: 0.5;
+}
+
+.spantext4{
+    position:absolute;
+    top:1000px;
+    color:white;
+    font-size:70px;
+    font-weight:700;
+    width:100%;
+    text-align: center
+}
+.spantext4:hover{
+    opacity: 0.5;
+}
+
+.footer_portfolio{
+    width: 100%;
+    text-align: center;
+    position: absolute;/*←絶対位置*/
+    bottom: 0; /*下に固定*/
+    color: white;
+}
 
 @media screen and (max-width: 590px) {
     .spantext{
         position:absolute;
-        top:30%;
+        top:100px;
         color:white;
         font-size:60px;
         font-weight:700;
         width:100%;
         text-align: center
     }
+
+
 }
 
 

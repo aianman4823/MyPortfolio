@@ -1,7 +1,9 @@
 import React from 'react';
 import Header2 from '../organisms/header2';
-import './aboutme.css';
+
 import prof from './fishing.png';
+
+import './aboutme.css';
 
 
 export default class Portfolio extends React.Component {
@@ -91,30 +93,31 @@ export default class Portfolio extends React.Component {
 
                 <div className="main">
                     <div style={styles.profStg} className="profStg">
-                        <p>2017年度から東京海洋大学に在学中の学生です。<br />
+                        <p>東京海洋大学に在学中の学生です。<br />
                             大学3年の4月からプログラミングスクール(code-ship)に通ってます。<br />
-                            python,javascriptをメインに学習しています。
+                            python,javascriptをメインに学習しています。<br/>
+                            フレームワークはDjango,React,ReactNativeです。
                         </p>
                     </div>
                     <div className="photo">
                         <img style={styles.top} src={prof} alt="fishing" />
                     </div>
 
-                    <div style={{ position: 'absolute', top: this.state.sH / 1.5, width:this.state.sW }} >
+                    <div style={{ position: 'absolute', top: this.state.sH / 1.5, width: this.state.sW }} >
                         <div className="topics" >
                             <dl>
                                 <dt>名前：</dt>
                                 <dd>原田　明斗 (Akito Harada)</dd>
-                            
+
                                 <dt>所属大学：</dt>
                                 <dd>お魚くん大学所属　３年</dd>
-                        
+
                                 <dt>出身：</dt>
                                 <dd>山口県の田舎</dd>
-                            
+
                                 <dt>サークル：</dt>
                                 <dd>深海魚同好会, エンジニア部(仮)</dd>
-                            
+
                                 <dt>趣味：</dt>
                                 <dd>シュノーケリング, スピアフィッシング, 釣り,etc.</dd>
 
@@ -123,6 +126,12 @@ export default class Portfolio extends React.Component {
                             </dl>
                         </div>
                     </div>
+                </div>
+                <div>
+                    <footer className='footer'>
+                        <p >COPYRIGHT &#169; Akito's Portfolio ALL RIGHTS RESERVED.	</p>
+                    </footer>
+
                 </div>
             </div>
         );

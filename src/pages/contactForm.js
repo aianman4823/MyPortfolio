@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button'
+import firebase from '../firebase/firebase';
 
-const firebase = require("firebase");
+const firebase2 = require("firebase");
 require("firebase/functions");
 
 
@@ -18,7 +19,7 @@ class ContactForm extends Component {
     data.name = e.target.name.value
     data.email = e.target.email.value
     data.content = e.target.content.value
-    let sendMail = firebase.functions().httpsCallable('sendMail');
+    let sendMail = firebase2.functions().httpsCallable('sendMail');
     sendMail(data)
     e.target.name.value = ""
     e.target.email.value = ""

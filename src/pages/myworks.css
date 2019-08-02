@@ -1,0 +1,8 @@
+.a_text{
+    text-decoration:none;
+    color:black
+}
+
+.a_text:hover{
+    opacity: 0.5;
+}
