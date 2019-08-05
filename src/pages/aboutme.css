@@ -1,10 +1,7 @@
-
     .topics dt{
         float:left;
    
     }
-
-    
 
     .photo{
         position: absolute;
@@ -20,41 +17,39 @@
         bottom: 0; /*下に固定*/
     }
 
+    .main{
+        position: relative;
+    }
 
     @media screen and (max-width: 590px) {
         .topics dt{
             float:left;
-            width:30%
+            width:24%
         }
         .topics dd{
             padding-left:0;
+            width:100%;
         }
     
         .topics{
-            margin-left: 6%;
-            margin-top:250px;
+            margin-left: 5%;
+            position: absolute;
+            top:400px;
+            font-size: 13px;
         }
     
         .photo{
             position: absolute;
-            top:530px;
+            top:170px;
             left: 30%;
         }
         .profStg{
             margin-bottom: 45px;
             position: absolute;
-            top:350px;
             left: 35px; 
             right: 0;
         }
-        .footer{
-            color:black;
-            width: 100%;
-            text-align: center;
-            position: absolute;/*←絶対位置*/
-            bottom: -200px; /*下に固定*/
-            font-size: 12px;
-        }
+        
         }
 
 
@@ -65,23 +60,25 @@
     }
     .topics dd{
         padding-left:10%;
+        width:100%;
     }
 
     .topics{
         margin-left: 20%;
-        margin-top:250px;
+        position: absolute;
+        top:400px;
     }
 
     .photo{
         position: absolute;
-        top:70%;
+        top:170px;
         left: 40%;
     }
 
     .profStg{
         margin-bottom: 45px;
         position: absolute;
-        top:350px;
+
         left: 20%;
         right: 0;
     }
@@ -99,26 +96,28 @@
     @media screen and (min-width: 840px) {
         .topics dt{
             float:left;
-            width:20%
+            width:25%
         }
         .topics dd{
             padding-left:10%;
+            width: 100%
         }
 
         .topics{
             margin-left: 40%;
-            margin-top:0;
+            position: absolute;
+            top:175px;
         }
         
         .photo{
             position: absolute;
-            top:65%;
+            top:170px;
             left: 20%;
         }
         .profStg{
             margin-bottom: 45px;
             position: absolute;
-            top:350px;
+
             left: 30%;
             right: 0;
         }
@@ -136,20 +135,20 @@
     @media screen and (min-width: 1085px) {
         .topics dt{
             float:left;
-            width:15%
+            width:35%
         }
         .topics dd{
             padding-left:10%;
+            width: 100%
         }
 
         .topics{
             margin-left: 35%;
-            margin-top:0;
         }
         
         .photo{
             position: absolute;
-            top:65%;
+            top:170px;
             left: 20%;
         }
         }

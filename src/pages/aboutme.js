@@ -75,9 +75,6 @@ export default class Portfolio extends React.Component {
                 height: "auto",
                 float: "left",
             },
-
-
-
         }
         return (
             <div>
@@ -92,7 +89,7 @@ export default class Portfolio extends React.Component {
                 </div >
 
                 <div className="main">
-                    <div style={styles.profStg} className="profStg">
+                    <div className="profStg">
                         <p>東京海洋大学に在学中の学生です。<br />
                             大学3年の4月からプログラミングスクール(code-ship)に通ってます。<br />
                             python,javascriptをメインに学習しています。<br/>
@@ -103,7 +100,7 @@ export default class Portfolio extends React.Component {
                         <img style={styles.top} src={prof} alt="fishing" />
                     </div>
 
-                    <div style={{ position: 'absolute', top: this.state.sH / 1.5, width: this.state.sW }} >
+                    <div style={{width: this.state.sW }} >
                         <div className="topics" >
                             <dl>
                                 <dt>名前：</dt>
@@ -124,15 +121,12 @@ export default class Portfolio extends React.Component {
                                 <dt>好きな格言：</dt>
                                 <dd>運命よ、そこをどけ、俺が通る　 </dd>
                             </dl>
+                            
                         </div>
+                        
                     </div>
                 </div>
-                <div>
-                    <footer className='footer'>
-                        <p >COPYRIGHT &#169; Akito's Portfolio ALL RIGHTS RESERVED.	</p>
-                    </footer>
-
-                </div>
+                
             </div>
         );
     }

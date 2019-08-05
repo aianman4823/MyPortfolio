@@ -5,7 +5,6 @@ import Header2 from '../organisms/header2';
 import ContactForm from './contactForm';
 
 
-
 export default class Portfolio extends React.Component {
     constructor(props) {
 
@@ -63,10 +62,10 @@ export default class Portfolio extends React.Component {
                 fontSize: '20px',
                 fontWeight: 700,
             },
-            footer:{
+            footer: {
                 width: "100%",
                 textAlign: "center",
-                
+                fontSize: '13px',
             },
         }
         return (
@@ -83,10 +82,10 @@ export default class Portfolio extends React.Component {
                 </div >
                 <div>
                     <ContactForm />
-                    <footer style={styles.footer}>
-                        <p>COPYRIGHT &#169; Akito's Portfolio ALL RIGHTS RESERVED.	</p>
-                    </footer>
                 </div>
+                <footer style={styles.footer}>
+                    <p>COPYRIGHT &#169; Akito's Portfolio ALL RIGHTS RESERVED.	</p>
+                </footer>
             </div>
 
         );

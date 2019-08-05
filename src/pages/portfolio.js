@@ -94,7 +94,7 @@ export default class Portfolio extends React.Component {
             },
         }
         return (
-            <div style={{ position: 'relative' }}>
+            <div style={{ position: 'relative', width: '100%' }}>
                 <div style={{ position: 'relative' }}>
                     {/* こいつはheader部分にあたり、固定させる */}
                     < Header2 style={{ position: 'absolute' }} />
@@ -103,35 +103,32 @@ export default class Portfolio extends React.Component {
                         <span className='spantext' >My Portfolio</span>
                         <span style={styles.spansmalltext}>About My Portfolio</span>
                     </div >
-
-                    {/* メインコンテンツ */}
-                    <div>
-                        <div>
-                            < div id="link" style={styles.backcolor2}>
-                                <Link to='/about'><span className='spantext2' >About Me</span></Link>
-                                <span style={styles.spansmalltext2}>Who I am ?</span>
-                            </div >
-                        </div>
-                        <div>
-                            < div id="link" style={styles.backcolor3}>
-                                <Link to="/works"><span className='spantext3' >My Works</span></Link>
-                                <span style={styles.spansmalltext3}>About My works</span>
-                            </div >
-                        </div>
-                        <div>
-                            < div id="link" style={styles.backcolor4}>
-                                <Link to='/contact'><span className='spantext4' >Contact</span></Link>
-                                <span style={styles.spansmalltext4}>How to contact ?</span>
-                            </div >
-                        </div>
-                    </div>
-                </div >
-
-                <div>
-                    <footer className='footer_portfolio'>
-                        <p>COPYRIGHT &#169; Akito's Portfolio ALL RIGHTS RESERVED.	</p>
-                    </footer>
                 </div>
+                {/* メインコンテンツ */}
+                <div>
+                    <div style={{ position: 'relative' }}>
+                        < div id="link" style={styles.backcolor2}>
+                            <Link to='/about'><span className='spantext2' >About Me</span></Link>
+                            <span style={styles.spansmalltext}>Who I am ?</span>
+                        </div >
+                    </div>
+                    <div style={{ position: 'relative' }}>
+                        < div id="link" style={styles.backcolor3}>
+                            <Link to="/works"><span className='spantext2' >My Works</span></Link>
+                            <span style={styles.spansmalltext}>About My works</span>
+                        </div >
+                    </div>
+                    <div style={{ position: 'relative' }}>
+                        < div id="link" style={styles.backcolor4}>
+                            <Link to='/contact'><span className='spantext2' >Contact</span></Link>
+                            <span style={styles.spansmalltext}>How to contact ?</span>
+                        </div >
+                        <footer className='footer_portfolio'>
+                            <p>COPYRIGHT &#169; Akito's Portfolio ALL RIGHTS RESERVED.	</p>
+                        </footer>
+                    </div>
+                </div>
+
             </div>
 
         );
