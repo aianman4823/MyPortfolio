@@ -92,41 +92,44 @@ export default class Portfolio extends React.Component {
                     <div className="profStg">
                         <p>東京海洋大学に在学中の学生です。<br />
                             大学3年の4月からプログラミングスクール(code-ship)に通ってます。<br />
-                            python,javascriptをメインに学習しています。<br/>
+                            python,javascriptをメインに学習しています。<br />
                             フレームワークはDjango,React,ReactNativeです。
                         </p>
                     </div>
-                    <div className="photo">
-                        <img style={styles.top} src={prof} alt="fishing" />
-                    </div>
-
-                    <div style={{width: this.state.sW }} >
-                        <div className="topics" >
-                            <dl>
-                                <dt>名前：</dt>
-                                <dd>原田　明斗 (Akito Harada)</dd>
-
-                                <dt>所属大学：</dt>
-                                <dd>お魚くん大学所属　３年</dd>
-
-                                <dt>出身：</dt>
-                                <dd>山口県の田舎</dd>
-
-                                <dt>サークル：</dt>
-                                <dd>深海魚同好会, エンジニア部(仮)</dd>
-
-                                <dt>趣味：</dt>
-                                <dd>シュノーケリング, スピアフィッシング, 釣り,etc.</dd>
-
-                                <dt>好きな格言：</dt>
-                                <dd>運命よ、そこをどけ、俺が通る　 </dd>
-                            </dl>
-                            
+                    <div className="photo_topics">
+                        <div className="photo">
+                            <img style={styles.top} src={prof} alt="fishing" />
                         </div>
-                        
+
+                        <div style={{ width: this.state.sW }} >
+                            <div className="topics" >
+                                <dl>
+                                    <dt>名前：</dt>
+                                    <dd>原田　明斗 (Akito Harada)</dd>
+
+                                    <dt>所属大学：</dt>
+                                    <dd>お魚くん大学所属　３年</dd>
+
+                                    <dt>出身：</dt>
+                                    <dd>山口県の田舎</dd>
+
+                                    <dt>サークル：</dt>
+                                    <dd>深海魚同好会, エンジニア部(仮)</dd>
+
+                                    <dt>趣味：</dt>
+                                    <dd>シュノーケリング, スピアフィッシング, 釣り,etc.</dd>
+
+                                    <dt>好きな格言：</dt>
+                                    <dd>運命よ、そこをどけ、俺が通る　 </dd>
+                                </dl>
+
+                            </div>
+                        </div>
+
+
                     </div>
                 </div>
-                
+
             </div>
         );
     }

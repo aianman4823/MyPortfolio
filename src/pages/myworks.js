@@ -108,8 +108,8 @@ export default class Portfolio extends React.Component {
                 </div >
                 <div>
                     <div style={styles.image}>
-                        {lists.map(value => (
-                            <div style={styles.image}>
+                        {lists.map((value,index) => (
+                            <div key={index} style={styles.image}>
                                 <img style={styles.image} src={value.file} alt="file"/>
                                 <span>
                                     <h2><a className='a_text' href={value.url}>{value.title}</a></h2>
